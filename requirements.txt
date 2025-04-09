@@ -1,0 +1,5 @@
+dash                 # core framework
+pandas
+numpy
+plotly               # Plotly ≥5 for responsive graphs
+gunicorn             # production WSGI server Render expects
