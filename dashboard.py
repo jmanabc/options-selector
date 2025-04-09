@@ -23,6 +23,7 @@ current_price = df_aapl['stockPrice'].iloc[0]
 
 # Initialize the Dash app.
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Options Selector"),

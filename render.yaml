@@ -1,8 +1,8 @@
 services:
   - type: web
     name: options-selector
-    runtime: python        # ← required field
-    plan: free             # free tier
-    region: virginia       # or "ohio"
+    runtime: python
+    plan: free
+    region: virginia
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn dashboard:app
+    startCommand: gunicorn --bind :$PORT --workers 4 dashboard:server
