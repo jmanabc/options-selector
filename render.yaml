@@ -5,4 +5,4 @@ services:
     plan: free             # free tier
     region: virginia       # or "ohio"
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn dashboard:app.server
+    startCommand: gunicorn dashboard:app
